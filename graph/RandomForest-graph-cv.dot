@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="PetalLength <= 2.45\nentropy = 1.58\nsamples = 100.0%\nvalue = [0.33, 0.35, 0.32]\nclass = Iris-versicolor", fillcolor="#fbfefc"] ;
+1 [label="entropy = 0.0\nsamples = 33.7%\nvalue = [1.0, 0.0, 0.0]\nclass = Iris-setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="PetalLength <= 4.95\nentropy = 1.0\nsamples = 66.3%\nvalue = [0.0, 0.52, 0.48]\nclass = Iris-versicolor", fillcolor="#eefdf4"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="PetalWidth <= 1.7\nentropy = 0.4\nsamples = 39.5%\nvalue = [0.0, 0.92, 0.08]\nclass = Iris-versicolor", fillcolor="#4ae78c"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 36.0%\nvalue = [0.0, 1.0, 0.0]\nclass = Iris-versicolor", fillcolor="#39e581"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 3.5%\nvalue = [0.0, 0.0, 1.0]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+3 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 26.7%\nvalue = [0.0, 0.0, 1.0]\nclass = Iris-virginica", fillcolor="#8139e5"] ;
+2 -> 6 ;
+}
